@@ -34,7 +34,7 @@ var canvas = document.getElementById( 'overlay' ),
 		
 // set canvas dimensions
 canvas.width = document.getElementById('container').offsetWidth;
-canvas.height = document.getElementById('container').offsetWidth;
+canvas.height = document.getElementById('container').offsetHeight;
 
 // now we are going to setup our function placeholders for the entire demo
 
@@ -233,7 +233,7 @@ function loop() {
 	if( timerTick >= timerTotal ) {
 		if( !mousedown ) {
 			// start the firework at the bottom middle of the screen, then set the random target coordinates, the random y coordinates will be set within the range of the top half of the screen
-			fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
+			fireworks.push( new Firework( cw / 2, ch , random( 0, cw ), random( 0, ch / 2 ) ) );
 			timerTick = 0;
 		}
 	} else {
@@ -272,3 +272,4 @@ canvas.addEventListener( 'mouseup', function( e ) {
 // once the window loads, we are ready for some fireworks!
 window.onload = loop;
 
+window.onresize = function(){ location.reload(); }
