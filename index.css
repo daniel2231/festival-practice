@@ -1,0 +1,42 @@
+@font-face { font-family: 'BMDOHYEON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+* {
+    font-family: 'BMDOHYEON';
+}
+
+.profile-pic {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.profile-pic img {
+    width: 15em;
+    height: 15em;
+    max-width: 15em;
+    max-height: 15em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%
+}
+
+.profile-heading {
+    margin-top: 1em;
+}
+
+.profile-desc {
+    margin-bottom: 4em;
+}
+
+.height-resize {
+    margin-top: -10px;
+}
+
+.container {
+    position: relative;
+}
+
+.container canvas, #overlay {
+    position: absolute;
+}
+
