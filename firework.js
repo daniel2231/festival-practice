@@ -33,8 +33,8 @@ var canvas = document.getElementById( 'overlay' ),
 		my;
 		
 // set canvas dimensions
-canvas.width = document.getElementById('container').offsetWidth;
-canvas.height = document.getElementById('container').offsetHeight;
+canvas.width = document.getElementById('myCarousel').offsetWidth;
+canvas.height = document.getElementById('myCarousel').offsetHeight;
 
 // now we are going to setup our function placeholders for the entire demo
 
