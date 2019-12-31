@@ -25,6 +25,7 @@ body {
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 32rem;
+    overflow: hidden;
   }
   .carousel-item > img {
     position: absolute;
@@ -35,17 +36,17 @@ body {
   }
 
   .img1 {
-      z-index: -1;
+      z-index: 1;
   }
 
   .img2 {
       z-index: -1;
       margin: auto;
   }
-
-  rect {
-      opacity: 50%;
-      fill: "black";
+  
+  .img3 {
+    z-index: -1;
+    margin: auto;
   }
   
   .carousel-control.left, .carousel-control.right {
